@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanmay Bhar - Full-Stack Web & Mobile Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Tanmay Bhar, Full Stack Web Developer and Mobile App Developer specializing in React, Node.js, PHP, MySQL, and JavaScript." />
+  <meta name="keywords" content="Tanmay Bhar, Full Stack Developer, React Developer, Node.js Developer, Mobile App Developer, MyTarakeswar, Pharmacy Tracker, Portfolio" />
+  <meta name="author" content="Tanmay Bhar" />
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tanmay Bhar | Full Stack & Mobile App Developer" />
+  <meta property="og:description" content="Full-stack web developer and mobile app engineer creating high performance applications." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND CANVAS PARTICLES -->
+  <canvas id="particles-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 0; opacity: 0.4;"></canvas>
+
+  <!-- NAVIGATION HEADER -->
+  <nav class="nav-header">
+    <div class="brand-hello-wrapper" id="home">
+      <!-- Professional Vector Waving Hand SVG -->
+      <span class="waving-hand">
+        <svg class="waving-hand-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 11V6a2 2 0 0 0-4 0v4M14 10V4a2 2 0 0 0-4 0v6M10 10.5V5a2 2 0 0 0-4 0v9M6 14.5V11a2 2 0 0 0-4 0v6a8 8 0 0 0 16 0v-6a2 2 0 0 0-4 0" fill="url(#profHandGrad)"/>
+          <defs>
+            <linearGradient id="profHandGrad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FBC138"/>
+              <stop offset="1" stop-color="#f59e0b"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <div class="hello-text">
+        Hello<span class="hello-expand">ooooooo</span>!
+      </div>
+    </div>
+
+    <div class="nav-actions-right">
+      <!-- Social Media Icons with Hand-drawn Scribble SVG Hover -->
+      <div class="social-links-group">
+        <a href="https://github.com/Tanmaybhar7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+          <svg class="scribble-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15c2 3 4 4 7 4s7 -3 7 -7s-3 -7 -6 -7s-5 1.5 -5 4s2 5 6 5s8.4 -2.4 10 -5"></path></svg>
+        </a>
+
+        <a href="https://linkedin.com/in/tanmaybhar7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+          <svg class="scribble-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15c2 3 4 4 7 4s7 -3 7 -7s-3 -7 -6 -7s-5 1.5 -5 4s2 5 6 5s8.4 -2.4 10 -5"></path></svg>
+        </a>
+
+        <a href="https://instagram.com/tanmay.cr7" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <svg class="scribble-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15c2 3 4 4 7 4s7 -3 7 -7s-3 -7 -6 -7s-5 1.5 -5 4s2 5 6 5s8.4 -2.4 10 -5"></path></svg>
+        </a>
+      </div>
+
+      <!-- SFX UI Sound Toggle Button -->
+      <button id="sfx-toggle" class="sfx-toggle-btn" title="Toggle UI Sound Effects">
+        <svg class="sfx-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+
+      <!-- Download CV Button -->
+      <button id="download-cv-nav-btn" class="nav-download-cv-btn" title="Download Tanmay's CV">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>CV</span>
+      </button>
+
+      <!-- Enhanced Radio Lofi Player Button -->
+      <button id="radio-player-btn" class="radio-player-btn" aria-label="Radio Lofi Player">
+        <svg class="radio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18V5l12-2v13"></path>
+          <circle cx="6" cy="18" r="3"></circle>
+          <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+        <div class="equalizer-icon">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+        <span id="radio-status" class="radio-text">Radio Lofi</span>
+        <span class="radio-dot"></span>
+      </button>
+      <audio id="radio-audio" src="https://usa9.fastcast4u.com/proxy/jamz?mp=/1" preload="none"></audio>
+
+      <!-- Enhanced Dark / Light Theme Toggle Button -->
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION WITH CHARACTER HOVER & SVG SINE MARQUEE -->
+  <section id="spark-effect-zone" class="hero-zone">
+    <div class="hero-title-container">
+      <h1 class="hero-main-name">
+        <span class="hero-word">
+          <span class="char-span char-t">T<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-a1">A<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-n">N<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-m">M<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-a2">A<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-y">Y<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+        </span>
+        <span class="hero-word">
+          <span class="char-span char-b">B<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-h">H<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-a3">A<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          <span class="char-span char-r">R<span class="char-pin"><svg class="triangle-rotate-with-delay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20l7 -12h-14z"></path></svg></span></span>
+          
+          <!-- Speaker Audio Badge -->
+          <span id="sound-pronounce" class="sound-pronounce-btn" title="Listen Pronunciation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+          </span>
+        </span>
+      </h1>
+      
+      <p class="hero-subtitle-tag">Full-Stack Web & Mobile App Developer</p>
+
+      <!-- Hero Quick CTA Group -->
+      <div class="hero-cta-group">
+        <button id="hire-me-hero-btn" class="pill-action-btn hero-cta-btn" style="background: var(--accent-yellow); color: #0f172a;">
+          <span>Hire Me / Book Call</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button id="download-cv-hero-btn" class="pill-action-btn hero-cv-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download CV</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sine Wave SVG Marquee Background with Multicolor Gradient -->
+    <div class="svg-marquee-wrapper">
+      <svg class="marquee-svg" viewBox="0 0 2530 740">
+        <defs>
+          <linearGradient id="marqueeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FBC138" stop-opacity="0.85"/>
+            <stop offset="33%" stop-color="#00f2fe" stop-opacity="0.85"/>
+            <stop offset="66%" stop-color="#b087ff" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#10B981" stop-opacity="0.85"/>
+          </linearGradient>
+        </defs>
+        <path id="sinePath" fill="none" stroke="none" d="M0 200 C 300 100, 500 500, 800 200 C 1100 100, 1300 500, 1600 200 C 1900 100, 2200 500, 2530 200"></path>
+        <text class="marquee-text-path">
+          <textPath xlink:href="#sinePath" startOffset="0%">
+            — REACT — NODE.JS — JAVASCRIPT — PHP — MYSQL — VITE — EXPRESS.JS — BOOTSTRAP — HTML5 — CSS3 — GIT — GITHUB — ANDROID APP — REST API — REACT — NODE.JS — JAVASCRIPT — PHP — MYSQL — VITE
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- 3D Perspective Grid Backdrop -->
+    <div class="perspective-grid-backdrop">
+      <div class="perspective-grid-inner animate-grid"></div>
+      <div class="perspective-fade-mask"></div>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION WITH FLOATING BADGES & LIVE CODE SNIPPET WIDGET -->
+  <section id="intro" class="intro-section">
+    <div class="intro-statement-box reveal-on-scroll">
+      <p class="intro-greeting">
+        <!-- Professional Vector Waving Hand SVG -->
+        <span class="waving-hand" style="vertical-align: middle; margin-right: 0.2rem;">
+          <svg class="waving-hand-svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 11V6a2 2 0 0 0-4 0v4M14 10V4a2 2 0 0 0-4 0v6M10 10.5V5a2 2 0 0 0-4 0v9M6 14.5V11a2 2 0 0 0-4 0v6a8 8 0 0 0 16 0v-6a2 2 0 0 0-4 0" fill="url(#profHandGrad2)"/>
+            <defs>
+              <linearGradient id="profHandGrad2" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FBC138"/>
+                <stop offset="1" stop-color="#f59e0b"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        Hey, I'm Tanmay Bhar, coding and crafting products and I'm a...
+      </p>
+      <h2 class="intro-heading-role">Front-end & Full-Stack Developer,</h2>
+      <div class="intro-description-pills">
+        specialized in building scalable, user-centric web & mobile apps that prioritizes 
+        <span class="pill-badge pill-trends badge-float-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"></path></svg>
+          trends
+        </span>
+        <span class="pill-badge pill-ux badge-float-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1 2 -2a2 2 0 0 1 -2 -2a2 2 0 0 1 -2 2zm-7 12a6 6 0 0 1 6 -6a6 6 0 0 1 -6 -6a6 6 0 0 1 -6 6a6 6 0 0 1 6 6z"></path></svg>
+          UI / UX
+        </span>
+        <span class="pill-badge pill-a11y badge-float-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 9a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1v-10z"></path></svg>
+          accessibility
+        </span>
+        <span class="pill-badge pill-perf badge-float-4">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path></svg>
+          performance
+        </span>.
+      </div>
+    </div>
+
+    <!-- Live Interactive Code Snippet Box -->
+    <div class="code-snippet-wrapper reveal-on-scroll">
+      <div class="code-snippet-card">
+        <div class="code-header">
+          <div class="code-tabs">
+            <button class="code-tab active" data-lang="react">DeveloperProfile.jsx</button>
+            <button class="code-tab" data-lang="node">server.js</button>
+            <button class="code-tab" data-lang="sql">schema.sql</button>
+          </div>
+          <button id="copy-code-btn" class="copy-code-btn" title="Copy Snippet">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+        <pre class="code-body"><code id="code-content-block">
+<span class="code-kw">import</span> React <span class="code-kw">from</span> <span class="code-str">'react'</span>;
+
+<span class="code-kw">export default function</span> <span class="code-fn">DeveloperProfile</span>() {
+  <span class="code-kw">const</span> developer = {
+    name: <span class="code-str">'Tanmay Bhar'</span>,
+    role: <span class="code-str">'Full Stack & Mobile Engineer'</span>,
+    techStack: [<span class="code-str">'React'</span>, <span class="code-str">'Node.js'</span>, <span class="code-str">'PHP'</span>, <span class="code-str">'MySQL'</span>],
+    status: <span class="code-str">'Ready for high-impact projects'</span>
+  };
+
+  <span class="code-kw">return</span> (
+    &lt;<span class="code-tag">div</span> <span class="code-attr">className</span>=<span class="code-str">"dev-card"</span>&gt;
+      &lt;<span class="code-tag">h2</span>&gt;{developer.name}&lt;/<span class="code-tag">h2</span>&gt;
+      &lt;<span class="code-tag">p</span>&gt;{developer.role}&lt;/<span class="code-tag">p</span>&gt;
+    &lt;/<span class="code-tag">div</span>&gt;
+  );
+}
+        </code></pre>
+      </div>
+    </div>
+
+    <!-- Draggable Mac Terminal Window with Quick Command Chips -->
+    <div class="terminal-wrapper reveal-on-scroll">
+      <div id="terminal-window" class="terminal-card">
+        <div id="terminal-header" class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">Terminal - tanmay@portfolio:~</div>
+          <div style="width: 2rem;"></div>
+        </div>
+
+        <!-- Terminal Quick Action Chips -->
+        <div class="terminal-quick-chips">
+          <button class="term-chip-btn" data-cmd="whoami">whoami</button>
+          <button class="term-chip-btn" data-cmd="skills">skills</button>
+          <button class="term-chip-btn" data-cmd="projects">projects</button>
+          <button class="term-chip-btn" data-cmd="certificates">certificates</button>
+          <button class="term-chip-btn" data-cmd="contact">contact</button>
+          <button class="term-chip-btn" data-cmd="clear">clear</button>
+        </div>
+
+        <div id="terminal-body" class="terminal-body">
+          <div class="terminal-welcome">Last login: Sun Aug 04 00:45:00 on console. Type 'help' or click shortcuts above.</div>
+          <div class="terminal-line"><span class="terminal-prompt">tanmay@portfolio:~$</span> <span class="terminal-cmd">whoami</span></div>
+          <div class="terminal-output">Tanmay Bhar - Full Stack Web & Mobile App Developer</div>
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">tanmay@portfolio:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help'..." autofocus />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION WITH CATEGORY FILTERS & SEARCH BAR -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">P</span><span class="nav-a-letter">r</span><span class="nav-a-letter">o</span><span class="nav-a-letter">j</span><span class="nav-a-letter">e</span><span class="nav-a-letter">c</span><span class="nav-a-letter">t</span><span class="nav-a-letter">s</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">P</span><span class="nav-a-letter">r</span><span class="nav-a-letter">o</span><span class="nav-a-letter">j</span><span class="nav-a-letter">e</span><span class="nav-a-letter">c</span><span class="nav-a-letter">t</span><span class="nav-a-letter">s</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Search Bar & Category Filter Tabs -->
+      <div class="project-toolbar-row reveal-on-scroll">
+        <div class="project-search-box">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="project-search-input" placeholder="Search projects by keyword (e.g. Weather, Pharmacy, React)..." />
+        </div>
+
+        <div class="filter-tabs-wrapper">
+          <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+          <button class="filter-tab-btn" data-filter="web">Web Apps</button>
+          <button class="filter-tab-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-tab-btn" data-filter="mobile">Mobile Apps</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: MyTarakeswar -->
+        <div class="neo-card-wrapper reveal-on-scroll" data-project="mytarakeswar" data-category="fullstack web">
+          <div class="neo-card-surface">
+            <div class="neo-project-icon icon-temple">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20h20M4 20v-9M20 20v-9M8 20v-9M12 20v-9M16 20v-9M3 11l9-7 9 7M12 4v3"/>
+              </svg>
+            </div>
+            <div class="neo-project-info">
+              <h3 class="neo-project-title">MyTarakeswar</h3>
+              <p class="neo-project-sub">mytarakeswar.in</p>
+            </div>
+          </div>
+          <div class="neo-card-shadow-1"></div>
+          <div class="neo-card-shadow-2"></div>
+        </div>
+
+        <!-- Project 2: Pharmacy Tracker -->
+        <div class="neo-card-wrapper reveal-on-scroll delay-1" data-project="pharmacy" data-category="fullstack web">
+          <div class="neo-card-surface">
+            <div class="neo-project-icon icon-pill">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.5 20.5l-7-7a5 5 0 0 1 7.071-7.071l7 7a5 5 0 0 1-7.071 7.071z"/>
+                <path d="M8.5 8.5l7 7"/>
+              </svg>
+            </div>
+            <div class="neo-project-info">
+              <h3 class="neo-project-title">Pharmacy Stock & Expiry Tracker</h3>
+              <p class="neo-project-sub">pharmacytracker.dev</p>
+            </div>
+          </div>
+          <div class="neo-card-shadow-1"></div>
+          <div class="neo-card-shadow-2"></div>
+        </div>
+
+        <!-- Project 3: Skill Gap Analysis -->
+        <div class="neo-card-wrapper reveal-on-scroll delay-2" data-project="skillgap" data-category="web">
+          <div class="neo-card-surface">
+            <div class="neo-project-icon icon-chart">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10M12 20V4M6 20v-6"/>
+              </svg>
+            </div>
+            <div class="neo-project-info">
+              <h3 class="neo-project-title">Skill Mapping & Gap System</h3>
+              <p class="neo-project-sub">skillgap.dev</p>
+            </div>
+          </div>
+          <div class="neo-card-shadow-1"></div>
+          <div class="neo-card-shadow-2"></div>
+        </div>
+
+        <!-- Project 4: MySkyPulse Mobile App -->
+        <div class="neo-card-wrapper reveal-on-scroll delay-3" data-project="myskypulse" data-category="mobile">
+          <div class="neo-card-surface">
+            <div class="neo-project-icon icon-weather">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M18.36 5.64l-1.41 1.41"/>
+                <path d="M16 16a4 4 0 0 0-4-4h-1a5 5 0 1 0 1 9.9h4a3.5 3.5 0 0 0 0-7z"/>
+              </svg>
+            </div>
+            <div class="neo-project-info">
+              <h3 class="neo-project-title">MySkyPulse Mobile App</h3>
+              <p class="neo-project-sub">myskypulse.app</p>
+            </div>
+          </div>
+          <div class="neo-card-shadow-1"></div>
+          <div class="neo-card-shadow-2"></div>
+        </div>
+      </div>
+
+      <div class="load-more-btn-wrapper">
+        <a href="https://github.com/Tanmaybhar7" target="_blank" class="pill-action-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg>
+          View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK & MASTERY GRID SECTION WITH PROGRESS INDICATORS -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">S</span><span class="nav-a-letter">k</span><span class="nav-a-letter">i</span><span class="nav-a-letter">l</span><span class="nav-a-letter">l</span><span class="nav-a-letter">s</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">S</span><span class="nav-a-letter">k</span><span class="nav-a-letter">i</span><span class="nav-a-letter">l</span><span class="nav-a-letter">l</span><span class="nav-a-letter">s</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills-grid">
+        <!-- React -->
+        <div class="skill-card reveal-on-scroll">
+          <div class="skill-icon-box skill-react">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(0 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">React 19</h4>
+              <span class="skill-percent">95%</span>
+            </div>
+            <span class="skill-level">Frontend Mastery</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="skill-card reveal-on-scroll delay-1">
+          <div class="skill-icon-box skill-node">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">Node.js</h4>
+              <span class="skill-percent">90%</span>
+            </div>
+            <span class="skill-level">Backend Engine</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card reveal-on-scroll delay-2">
+          <div class="skill-icon-box skill-js">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 16.5v-4.5a2 2 0 0 1 4 0v4.5M15 16.5v-2a1.5 1.5 0 0 1 3 0v2"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">JavaScript (ES6+)</h4>
+              <span class="skill-percent">92%</span>
+            </div>
+            <span class="skill-level">Core Logic</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="skill-card reveal-on-scroll delay-3">
+          <div class="skill-icon-box skill-php">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="12" rx="9" ry="6"/><path d="M8 10v4M12 10v4M16 10v4"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">PHP</h4>
+              <span class="skill-percent">88%</span>
+            </div>
+            <span class="skill-level">Server Scripting</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 88%;"></div></div>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div class="skill-card reveal-on-scroll">
+          <div class="skill-icon-box skill-mysql">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6c0 1.657 3.582 3 8 3s8-1.343 8-3-3.582-3-8-3-8 1.343-8 3z"/><path d="M4 6v6c0 1.657 3.582 3 8 3s8-1.343 8-3V6"/><path d="M4 12v6c0 1.657 3.582 3 8 3s8-1.343 8-3v-6"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">MySQL Database</h4>
+              <span class="skill-percent">86%</span>
+            </div>
+            <span class="skill-level">Relational Data</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 86%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Android App -->
+        <div class="skill-card reveal-on-scroll delay-1">
+          <div class="skill-icon-box skill-android">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V6a4 4 0 0 1 8 0v4M8 4L6 2M16 4l2-2"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">Android Ecosystem</h4>
+              <span class="skill-percent">90%</span>
+            </div>
+            <span class="skill-level">Mobile App Dev</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- REST API -->
+        <div class="skill-card reveal-on-scroll delay-2">
+          <div class="skill-icon-box skill-api">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">RESTful APIs</h4>
+              <span class="skill-percent">94%</span>
+            </div>
+            <span class="skill-level">Data Integration</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 94%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Git & GitHub -->
+        <div class="skill-card reveal-on-scroll delay-3">
+          <div class="skill-icon-box skill-git">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 9v12"/><path d="M18 15V9a3 3 0 0 0-3-3H9"/></svg>
+          </div>
+          <div class="skill-info">
+            <div class="skill-top-row">
+              <h4 class="skill-name">Git & GitHub</h4>
+              <span class="skill-percent">91%</span>
+            </div>
+            <span class="skill-level">Version Control</span>
+            <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 91%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGINEERING WORKFLOW & SYSTEM ARCHITECTURE SECTION -->
+  <section id="workflow" class="workflow-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">W</span><span class="nav-a-letter">o</span><span class="nav-a-letter">r</span><span class="nav-a-letter">k</span><span class="nav-a-letter">f</span><span class="nav-a-letter">l</span><span class="nav-a-letter">o</span><span class="nav-a-letter">w</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">W</span><span class="nav-a-letter">o</span><span class="nav-a-letter">r</span><span class="nav-a-letter">k</span><span class="nav-a-letter">f</span><span class="nav-a-letter">l</span><span class="nav-a-letter">o</span><span class="nav-a-letter">w</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="workflow-steps-grid">
+        <div class="workflow-card reveal-on-scroll">
+          <div class="step-num-badge">01</div>
+          <h3 class="workflow-step-title">Requirements & Architecture</h3>
+          <p class="workflow-step-desc">Defining system goals, modular component boundaries, and high-level technical specifications.</p>
+        </div>
+
+        <div class="workflow-card reveal-on-scroll delay-1">
+          <div class="step-num-badge">02</div>
+          <h3 class="workflow-step-title">DB Schema & API Design</h3>
+          <p class="workflow-step-desc">Modeling relational SQL schemas, indexing, and designing clean RESTful JSON endpoints.</p>
+        </div>
+
+        <div class="workflow-card reveal-on-scroll delay-2">
+          <div class="step-num-badge">03</div>
+          <h3 class="workflow-step-title">UI Engineering & Logic</h3>
+          <p class="workflow-step-desc">Building responsive, accessible React/Vite interfaces with state optimization and fluid animation.</p>
+        </div>
+
+        <div class="workflow-card reveal-on-scroll delay-3">
+          <div class="step-num-badge">04</div>
+          <h3 class="workflow-step-title">Testing & Cloud Deployment</h3>
+          <p class="workflow-step-desc">Rigorous code verification, Lighthouse performance optimization, and server deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES BENTO GRID SECTION -->
+  <section id="principles" class="principles-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">P</span><span class="nav-a-letter">r</span><span class="nav-a-letter">i</span><span class="nav-a-letter">n</span><span class="nav-a-letter">c</span><span class="nav-a-letter">i</span><span class="nav-a-letter">p</span><span class="nav-a-letter">l</span><span class="nav-a-letter">e</span><span class="nav-a-letter">s</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">P</span><span class="nav-a-letter">r</span><span class="nav-a-letter">i</span><span class="nav-a-letter">n</span><span class="nav-a-letter">c</span><span class="nav-a-letter">i</span><span class="nav-a-letter">p</span><span class="nav-a-letter">l</span><span class="nav-a-letter">e</span><span class="nav-a-letter">s</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bento-grid">
+        <!-- 1. Latest Tech -->
+        <div class="bento-card bento-tech reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 6l4 6l5 -4l-2 10h-14l-2 -10l5 4z"></path></svg>
+          <div>
+            <h3 class="bento-card-title">Latest Tech</h3>
+            <p class="bento-card-desc">Stay ahead with modern frameworks, React 19, Vite, and Node.js for high-speed experiences.</p>
+          </div>
+        </div>
+
+        <!-- 2. Responsiveness -->
+        <div class="bento-card bento-resp reveal-on-scroll delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M13 19v-10a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v3.5"></path><path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9"></path></svg>
+          <div>
+            <h3 class="bento-card-title">Responsiveness</h3>
+            <p class="bento-card-desc">Seamless adaptation across web, tablets, and native mobile screens.</p>
+          </div>
+        </div>
+
+        <!-- 3. Performance -->
+        <div class="bento-card bento-perf reveal-on-scroll delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path></svg>
+          <div>
+            <h3 class="bento-card-title">Performance</h3>
+            <p class="bento-card-desc">Optimized asset delivery, fast DB queries, and smooth 60fps renders.</p>
+          </div>
+        </div>
+
+        <!-- 4. Beautiful UI -->
+        <div class="bento-card bento-ui reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 9m-6 0a6 6 0 1 0 12 0a6 6 0 1 0 -12 0"></path><path d="M12 15l3.4 5.89l1.598 -3.233l3.598 .232l-3.4 -5.889"></path></svg>
+          <div>
+            <h3 class="bento-card-title">Beautiful UI</h3>
+            <p class="bento-card-desc">Aesthetic color palettes, neo-brutalist depth, and subtle micro-interactions.</p>
+          </div>
+        </div>
+
+        <!-- 5. Beautiful UX -->
+        <div class="bento-card bento-ux reveal-on-scroll delay-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6.5 6.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path><path d="M14 14h7v7h-7z"></path></svg>
+          <div>
+            <h3 class="bento-card-title">Beautiful UX</h3>
+            <p class="bento-card-desc">Intuitive navigation, accessibility standards, and clean user flows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & GITHUB ACTIVITY SECTION WITH WORLD MAP GRAPHIC -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <h2 class="stats-title reveal-on-scroll">Applications & Systems Built for Real-World Scalability</h2>
+      <div class="map-container reveal-on-scroll">
+        <svg class="map-img" viewBox="0 0 1000 500" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.4">
+          <ellipse cx="500" cy="250" rx="450" ry="200" stroke="currentColor" stroke-dasharray="4 4" fill="none" />
+          <path d="M150 200 Q 250 150 350 220 T 550 180 T 750 260 T 900 200" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="300" cy="180" r="6" fill="#fbc138"/>
+          <circle cx="550" cy="240" r="6" fill="#b087ff"/>
+          <circle cx="750" cy="190" r="6" fill="#10B981"/>
+        </svg>
+
+        <div class="stat-floating-card stat-card-1">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Full Stack Projects Launched</div>
+        </div>
+
+        <div class="stat-floating-card stat-card-2">
+          <div class="stat-num">25+</div>
+          <div class="stat-label">GitHub Repositories</div>
+        </div>
+
+        <div class="stat-floating-card stat-card-3">
+          <div class="stat-num">1500+</div>
+          <div class="stat-label">Hours of Code & Debugging</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE / EXPERIENCE SECTION WITH TYPE FILTERS -->
+  <section id="experience" class="timeline-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">E</span><span class="nav-a-letter">x</span><span class="nav-a-letter">p</span><span class="nav-a-letter">e</span><span class="nav-a-letter">r</span><span class="nav-a-letter">i</span><span class="nav-a-letter">e</span><span class="nav-a-letter">n</span><span class="nav-a-letter">c</span><span class="nav-a-letter">e</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">E</span><span class="nav-a-letter">x</span><span class="nav-a-letter">p</span><span class="nav-a-letter">e</span><span class="nav-a-letter">r</span><span class="nav-a-letter">i</span><span class="nav-a-letter">e</span><span class="nav-a-letter">n</span><span class="nav-a-letter">c</span><span class="nav-a-letter">e</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Experience Category Filter -->
+      <div class="timeline-filter-row reveal-on-scroll">
+        <button class="timeline-filter-btn active" data-timeline-filter="all">All Journey</button>
+        <button class="timeline-filter-btn" data-timeline-filter="education">Education</button>
+        <button class="timeline-filter-btn" data-timeline-filter="dev">Development</button>
+      </div>
+
+      <div class="timeline-flow">
+        <div class="timeline-node reveal-on-scroll" data-node-type="education">
+          <div class="node-dot"></div>
+          <div class="node-date">2022 - Present</div>
+          <h3 class="node-title">Bachelor of Computer Applications (BCA)</h3>
+          <div class="node-sub">Brainware University • Computational Science</div>
+          <p class="node-body">Specializing in Software Engineering, Web Technologies, Database Architecture, and Computer Science fundamentals.</p>
+        </div>
+
+        <div class="timeline-node reveal-on-scroll delay-1" data-node-type="dev">
+          <div class="node-dot"></div>
+          <div class="node-date">2023</div>
+          <h3 class="node-title">React & Modern Frontend Mastery</h3>
+          <div class="node-sub">Web Application Development</div>
+          <p class="node-body">Engineered component-driven UIs with React 19, Vite, state management, and modern CSS3 design systems.</p>
+        </div>
+
+        <div class="timeline-node reveal-on-scroll delay-2" data-node-type="dev">
+          <div class="node-dot"></div>
+          <div class="node-date">2024</div>
+          <h3 class="node-title">Full Stack Backend & Relational Databases</h3>
+          <div class="node-sub">Node.js, Express & MySQL</div>
+          <p class="node-body">Architected RESTful API endpoints, authentication flows, and relational SQL database structures for platforms like MyTarakeswar and Pharmacy Tracker.</p>
+        </div>
+
+        <div class="timeline-node reveal-on-scroll delay-3" data-node-type="dev">
+          <div class="node-dot"></div>
+          <div class="node-date">2024 - 2026</div>
+          <h3 class="node-title">Mobile App Development & Ecosystem</h3>
+          <div class="node-sub">MySkyPulse Mobile App</div>
+          <p class="node-body">Created mobile applications with real-time REST API weather integrations, smooth touch interactions, and offline caching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES & ACHIEVEMENTS SECTION -->
+  <section id="certificates" class="certificates-section">
+    <div class="container">
+      <div class="section-header-striped reveal-on-scroll">
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <span class="nav-a">
+              <span class="nav-a-letters">
+                <span class="nav-a-letter">C</span><span class="nav-a-letter">e</span><span class="nav-a-letter">r</span><span class="nav-a-letter">t</span><span class="nav-a-letter">i</span><span class="nav-a-letter">f</span><span class="nav-a-letter">i</span><span class="nav-a-letter">c</span><span class="nav-a-letter">a</span><span class="nav-a-letter">t</span><span class="nav-a-letter">e</span><span class="nav-a-letter">s</span>
+              </span>
+              <span class="nav-a-stripe nav-a-stripe--yellow"></span>
+              <span class="nav-a-stripe nav-a-stripe--turquoise"></span>
+              <span class="nav-a-stripe nav-a-stripe--purple"></span>
+              <span class="nav-a-letters-top">
+                <span class="nav-a-letter">C</span><span class="nav-a-letter">e</span><span class="nav-a-letter">r</span><span class="nav-a-letter">t</span><span class="nav-a-letter">i</span><span class="nav-a-letter">f</span><span class="nav-a-letter">i</span><span class="nav-a-letter">c</span><span class="nav-a-letter">a</span><span class="nav-a-letter">t</span><span class="nav-a-letter">e</span><span class="nav-a-letter">s</span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="certificates-grid">
+        <!-- Cert 1: AWS ML & AI -->
+        <div class="cert-card reveal-on-scroll">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert1.png" class="cert-img" alt="AWS ML & AI Certificate" />
+            <div class="cert-badge-ribbon">AWS VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Fundamentals of ML & AI</h3>
+            <p class="cert-issuer">AWS Training & Certification • July 19, 2025</p>
+            <p class="cert-desc">Fundamentals of Machine Learning algorithms, Artificial Intelligence, model building, and AWS cloud concepts.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="aws" data-img="certificates/cert1.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 2: Prodigy InfoTech -->
+        <div class="cert-card reveal-on-scroll delay-1">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert2.png" class="cert-img" alt="Prodigy InfoTech Web Development Internship" />
+            <div class="cert-badge-ribbon">INTERNSHIP</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Web Development Internship</h3>
+            <p class="cert-issuer">Prodigy InfoTech • Aug 25, 2025</p>
+            <p class="cert-desc">1-month web engineering internship from July 15 to August 15, 2025 with outstanding remarks at Prodigy InfoTech.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="prodigy" data-img="certificates/cert2.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 3: Reliance Foundation -->
+        <div class="cert-card reveal-on-scroll delay-2">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert3.png" class="cert-img" alt="Reliance Foundation Python Programming" />
+            <div class="cert-badge-ribbon">RELIANCE ACADEMY</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Python Programming</h3>
+            <p class="cert-issuer">Reliance Foundation Skilling Academy • July 01, 2025</p>
+            <p class="cert-desc">Object-oriented programming, Python logic structures, algorithms, and backend computational scripting.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="reliance" data-img="certificates/cert3.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 4: CodSoft -->
+        <div class="cert-card reveal-on-scroll delay-3">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert4.png" class="cert-img" alt="CodSoft Virtual Internship" />
+            <div class="cert-badge-ribbon">INTERNSHIP</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Web Development Virtual Internship</h3>
+            <p class="cert-issuer">CodSoft • Sept 28, 2025</p>
+            <p class="cert-desc">4-week virtual internship program engineering web development applications and full-stack component logic.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="codsoft" data-img="certificates/cert4.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 5: Brainware University ICSCI -->
+        <div class="cert-card reveal-on-scroll">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert5.png" class="cert-img" alt="ICSCI Conference Certificate" />
+            <div class="cert-badge-ribbon">CONFERENCE</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Sustainable Computing Conference (ICSCI 2025)</h3>
+            <p class="cert-issuer">Brainware University • May 24, 2025</p>
+            <p class="cert-desc">Participated in the International Conference on Sustainable Computing for Industry hosted by Dept. of Computational Sciences.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="icsci" data-img="certificates/cert5.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 6: Accenture Software Engineering Simulation -->
+        <div class="cert-card reveal-on-scroll delay-1">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert7.png" class="cert-img" alt="Accenture Software Engineering Job Simulation" />
+            <div class="cert-badge-ribbon">ACCENTURE</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Software Engineering Job Simulation</h3>
+            <p class="cert-issuer">Accenture (Forage) • June 30, 2025</p>
+            <p class="cert-desc">Completed practical tasks in System Architecture, Security, Programming, Automated Testing, and Agile methodologies.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="accenture" data-img="certificates/cert7.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 7: AWS Events and Workflows -->
+        <div class="cert-card reveal-on-scroll delay-2">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert8.png" class="cert-img" alt="AWS Events and Workflows Certificate" />
+            <div class="cert-badge-ribbon">AWS VERIFIED</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Events and Workflows Pre-assessment</h3>
+            <p class="cert-issuer">AWS Training & Certification • June 30, 2025</p>
+            <p class="cert-desc">Event-driven serverless architectures, asynchronous workflows, AWS Step Functions, and cloud queue messaging.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="awsevents" data-img="certificates/cert8.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 8: AWS Solutions Architecture Simulation -->
+        <div class="cert-card reveal-on-scroll delay-3">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert9.png" class="cert-img" alt="AWS Solutions Architecture Simulation" />
+            <div class="cert-badge-ribbon">AWS / FORAGE</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Solutions Architecture Job Simulation</h3>
+            <p class="cert-issuer">AWS (Forage) • June 29, 2025</p>
+            <p class="cert-desc">Designed simple, scalable, highly available cloud hosting architecture and infrastructure topologies for enterprise workloads.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="awssolutions" data-img="certificates/cert9.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Cert 9: TCS iON Career Edge -->
+        <div class="cert-card reveal-on-scroll delay-4">
+          <div class="cert-img-wrapper">
+            <img src="certificates/cert10.png" class="cert-img" alt="TCS iON Career Edge Certificate" />
+            <div class="cert-badge-ribbon">TCS iON</div>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">TCS iON Career Edge - IT for Non-IT</h3>
+            <p class="cert-issuer">Tata Consultancy Services • July 05, 2025</p>
+            <p class="cert-desc">IT Industry Overview, Development Tools, Industry Elements, Trending Technologies, and Career Engineering fundamentals.</p>
+            <button class="pill-action-btn cert-view-btn" data-type="tcsion" data-img="certificates/cert10.png">
+              View Certificate 
+              <svg class="icon-scroll-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M10 8h4M10 12h4"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEV VISA CARD & CONTACT SECTION -->
+  <section id="contact" class="credentials-section">
+    <div class="container">
+      
+      <!-- Ultra-Realistic 3D Metallic Dev VISA Credit Card Widget -->
+      <div id="visa-card" class="visa-card-box reveal-on-scroll">
+        <div class="visa-card-sheen"></div>
+        <div class="visa-top-bar">
+          <span class="visa-bank-name">DEV CARD</span>
+          <div class="visa-chip-group">
+            <svg class="visa-chip-svg" viewBox="0 0 42 30" fill="none">
+              <rect width="42" height="30" rx="5" fill="url(#chipGrad)"/>
+              <path d="M0 10h14M0 20h14M28 10h14M28 20h14M14 0v30M28 0v30" stroke="#78350f" stroke-width="1" opacity="0.6"/>
+              <defs>
+                <linearGradient id="chipGrad" x1="0" y1="0" x2="42" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#f59e0b"/>
+                  <stop offset="0.5" stop-color="#fbbf24"/>
+                  <stop offset="1" stop-color="#d97706"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg class="visa-contactless-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8.5 14.5A4 4 0 0 1 8.5 9.5M12 17A7.5 7.5 0 0 0 12 7M15.5 19.5A11 11 0 0 0 15.5 4.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="visa-card-number">7501 &nbsp; 2282 &nbsp; 8207 &nbsp; 2026</div>
+
+        <div class="visa-card-bottom">
+          <div>
+            <div class="visa-label">CARD HOLDER</div>
+            <div class="visa-holder-name">TANMAY BHAR</div>
+          </div>
+          <div class="visa-logo-svg">
+            <svg viewBox="0 0 120 40" width="65" height="22" fill="currentColor">
+              <path d="M48.8 3.8L32.1 36.2h-10L38.4 3.8h10.4zm28.7 21.2c.1-4.7-4.2-7.1-7.7-8.8-3.6-1.8-4.8-2.9-4.8-4.5 0-1.6 1.8-3.2 5.7-3.2 3.2 0 6.2.7 8.5 1.8l1.5-7.1c-2.3-.9-5.9-1.6-9.6-1.6-10.2 0-17.4 5.4-17.5 13.2-.1 5.7 5.1 8.9 9 10.8 4 1.9 5.3 3.2 5.3 5 0 2.6-3.2 3.5-6.1 3.5-4.1 0-7.8-.9-10.5-2.2l-1.6 7.4c2.6 1.2 7.4 2.2 11.7 2.2 10.9 0 17.9-5.3 18.1-13.5zm24.6-21.2h-8c-2.5 0-4.3.7-5.4 3.3l-15.3 29.1h10.5s1.7-4.8 2.1-5.8h12.9c.3 1.4 1.2 5.8 1.2 5.8h9.3L102.1 3.8zm-6.2 18.6c.8-2.3 4.1-11.2 4.1-11.2l2.1 11.2h-6.2zM21.2 3.8L11.3 26 10.2 20c-.6-3.1-2.9-6.4-6.4-8.2L0 10.3l.2 1.1 11 24.8h10.8l16.1-32.4H21.2z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real FormSubmit / Mailto Contact Form -->
+      <div class="contact-card-box reveal-on-scroll">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          Let's Build Something Together 
+          <svg class="icon-lightning-svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="url(#boltGrad)" stroke="none"/>
+            <defs>
+              <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop stop-color="#FBC138"/>
+                <stop offset="100%" stop-color="#ef4444"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </h2>
+        
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-email">Your Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Your Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <!-- Professional Rocket Vector SVG Button -->
+          <button type="submit" id="contact-submit-btn" class="pill-action-btn" style="width: 100%; justify-content: center; gap: 0.6rem;">
+            <span>Send Message</span>
+            <svg class="icon-rocket-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.71 1.26-1.5 1.76-2.34L17.5 8.91a2.828 2.828 0 0 0-4-4L5.26 13.16c-.84.5-1.63 1.05-2.34 1.76z"/>
+              <path d="M15 9l-1 1M9 15l-1 1M14 4l5 5"/>
+            </svg>
+          </button>
+          
+          <div id="contact-status-msg" style="margin-top: 1rem; text-align: center; font-weight: 600; display: none; font-size: 0.95rem;"></div>
+        </form>
+
+        <div style="margin-top: 1.5rem; text-align: center; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Prefer direct email? </span>
+          <a href="mailto:bhartanmay@gmail.com" style="font-size: 0.85rem; color: var(--accent-yellow); font-weight: 700; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.3rem;">
+            Send directly to bhartanmay@gmail.com 
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLOATING SCROLL TO TOP WITH PROGRESS RING -->
+  <div id="scroll-to-top" class="scroll-to-top-btn" title="Back to Top">
+    <svg class="progress-ring-svg" width="48" height="48" viewBox="0 0 48 48">
+      <circle class="progress-ring-bg" cx="24" cy="24" r="20"/>
+      <circle id="progress-ring-circle" class="progress-ring-circle" cx="24" cy="24" r="20"/>
+    </svg>
+    <svg class="arrow-up-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </div>
+
+  <!-- HIRE ME / BOOK A CALL MODAL DIALOG -->
+  <div id="hire-modal" class="modal-overlay">
+    <div class="modal-content" style="max-width: 580px;">
+      <span id="hire-modal-close" class="modal-close-btn">&times;</span>
+      <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center;">Work With Tanmay Bhar</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-bottom: 1.5rem;">Select your project inquiry type or schedule a discussion.</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <a href="mailto:bhartanmay@gmail.com?subject=Full-Stack%20Web%20Project%20Inquiry" class="pill-action-btn" style="justify-content: space-between; text-align: left; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main);">
+          <span>💻 Full-Stack Web Development</span>
+          <span style="font-size: 0.8rem; color: var(--accent-yellow);">Hire Freelance</span>
+        </a>
+        <a href="mailto:bhartanmay@gmail.com?subject=Mobile%20App%20Development%20Inquiry" class="pill-action-btn" style="justify-content: space-between; text-align: left; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main);">
+          <span>📱 Mobile App Engineering</span>
+          <span style="font-size: 0.8rem; color: #00f2fe;">Hire Freelance</span>
+        </a>
+        <a href="mailto:bhartanmay@gmail.com?subject=Full-Time%20Role%20Discussion" class="pill-action-btn" style="justify-content: space-between; text-align: left; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main);">
+          <span>🚀 Full-Time Engineering Role</span>
+          <span style="font-size: 0.8rem; color: #10B981;">Discuss Offer</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL DIALOG -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span id="modal-close-btn" class="modal-close-btn">&times;</span>
+      <h3 id="modal-project-title" style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem;">Project Title</h3>
+      <p id="modal-project-desc" style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Project Description</p>
+      <div id="modal-project-tech" style="margin-bottom: 2rem;"></div>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a id="modal-github-btn" href="#" target="_blank" class="pill-action-btn" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">View GitHub Repo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE LIGHTBOX MODAL DIALOG -->
+  <div id="cert-lightbox-modal" class="modal-overlay">
+    <div class="cert-lightbox-content">
+      <span id="cert-modal-close" class="modal-close-btn">&times;</span>
+      <h3 id="cert-modal-title" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem;">Certificate View</h3>
+      <div id="cert-modal-view-container" class="cert-modal-view"></div>
+    </div>
+  </div>
+
+  <!-- ENHANCED PREMIUM FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand & Status Column -->
+        <div class="footer-col-brand">
+          <div class="footer-brand-title">TANMAY BHAR</div>
+          <p class="footer-brand-tag">Full-Stack Web & Mobile App Developer building high-performance, user-centric applications.</p>
+          <div class="footer-status-pill">
+            <span class="status-dot-green"></span> Available for full-time roles & freelance projects
+          </div>
+        </div>
+
+        <!-- Navigation Links Column -->
+        <div class="footer-col-links">
+          <h4 class="footer-col-heading">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#principles">Principles</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Socials Column -->
+        <div class="footer-col-social">
+          <h4 class="footer-col-heading">Connect</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com/Tanmaybhar7" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/tanmaybhar7" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+            </a>
+            <a href="https://instagram.com/tanmay.cr7" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="mailto:bhartanmay@gmail.com" class="footer-social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">&copy; 2026 Tanmay Bhar. All rights reserved.</p>
+        <p class="footer-crafted">Crafted with <span class="footer-bolt">⚡</span> & Precision</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for CV Download & SFX -->
+  <div id="toast-notification" class="toast-box">
+    <div class="toast-content">
+      <svg class="toast-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#10B981" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <div id="toast-message">CV download initiated for Tanmay Bhar!</div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof ParticleNetwork !== 'undefined') {
+        new ParticleNetwork('particles-canvas');
+      }
+    });
+  </script>
+</body>
+</html>
