@@ -62,6 +62,82 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
+  // 2B. DYNAMIC PAGE TITLE ON TAB VISIBILITY CHANGE
+  // --------------------------------------------------------------------------
+  const originalPageTitle = 'Tanmay Bhar — Full-Stack Web & Mobile App Developer | Portfolio';
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      document.title = 'Come back! 👋 | Tanmay Bhar';
+    } else {
+      document.title = originalPageTitle;
+    }
+  });
+
+  // --------------------------------------------------------------------------
+  // 2C. MOBILE NAVIGATION DRAWER & MENU TOGGLE
+  // --------------------------------------------------------------------------
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+  const mobileNavBackdrop = document.getElementById('mobile-nav-backdrop');
+  const mobileDrawerLinks = document.querySelectorAll('.mobile-drawer-link');
+  const downloadCvDrawerBtn = document.getElementById('download-cv-drawer-btn');
+
+  function openMobileMenu() {
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.add('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'true');
+    }
+    if (mobileNavDrawer) mobileNavDrawer.classList.add('active');
+    if (mobileNavBackdrop) mobileNavBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    playClickSynth(750, 0.04);
+  }
+
+  function closeMobileMenu() {
+    if (mobileMenuToggle) {
+      mobileMenuToggle.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileNavDrawer) mobileNavDrawer.classList.remove('active');
+    if (mobileNavBackdrop) mobileNavBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = mobileNavDrawer && mobileNavDrawer.classList.contains('active');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+  }
+
+  if (mobileNavBackdrop) {
+    mobileNavBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  mobileDrawerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
+  if (downloadCvDrawerBtn) {
+    downloadCvDrawerBtn.addEventListener('click', () => {
+      closeMobileMenu();
+      triggerCvDownload();
+    });
+  }
+
+  // --------------------------------------------------------------------------
   // 3. RADIO LOFI PLAYER WITH EQUALIZER ANIMATION & ACTIVE DOT
   // --------------------------------------------------------------------------
   const radioBtn = document.getElementById('radio-player-btn');
@@ -373,16 +449,19 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
   }
 
   // --------------------------------------------------------------------------
-  // 9. PROJECT CATEGORY FILTER TABS & INSTANT SEARCH BAR
+  // 9. PROJECT CATEGORY FILTER TABS, SEARCH BAR & EMPTY STATE
   // --------------------------------------------------------------------------
   const filterTabs = document.querySelectorAll('.filter-tab-btn');
   const projectSearchInput = document.getElementById('project-search-input');
   const projectCards = document.querySelectorAll('.neo-card-wrapper');
+  const noProjectsFound = document.getElementById('no-projects-found');
+  const resetFiltersBtn = document.getElementById('reset-project-filters-btn');
 
   function applyProjectFilters() {
     const activeTab = document.querySelector('.filter-tab-btn.active');
     const filterValue = activeTab ? activeTab.getAttribute('data-filter') : 'all';
     const searchQuery = projectSearchInput ? projectSearchInput.value.toLowerCase().trim() : '';
+    let matchCount = 0;
 
     projectCards.forEach(card => {
       const categories = card.getAttribute('data-category') || '';
@@ -396,6 +475,7 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
         card.style.display = 'block';
         card.style.opacity = '1';
         card.style.transform = 'scale(1)';
+        matchCount++;
       } else {
         card.style.opacity = '0';
         card.style.transform = 'scale(0.95)';
@@ -404,6 +484,14 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
         }, 200);
       }
     });
+
+    if (noProjectsFound) {
+      if (matchCount === 0) {
+        noProjectsFound.classList.add('visible');
+      } else {
+        noProjectsFound.classList.remove('visible');
+      }
+    }
   }
 
   filterTabs.forEach(tab => {
@@ -416,6 +504,20 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
 
   if (projectSearchInput) {
     projectSearchInput.addEventListener('input', applyProjectFilters);
+  }
+
+  if (resetFiltersBtn) {
+    resetFiltersBtn.addEventListener('click', () => {
+      if (projectSearchInput) projectSearchInput.value = '';
+      filterTabs.forEach(t => {
+        if (t.getAttribute('data-filter') === 'all') {
+          t.classList.add('active');
+        } else {
+          t.classList.remove('active');
+        }
+      });
+      applyProjectFilters();
+    });
   }
 
   // --------------------------------------------------------------------------
@@ -608,30 +710,30 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
   const projectData = {
     mytarakeswar: {
       title: "MyTarakeswar - Tourism & Guide Platform",
-      desc: "A complete tourism guide platform featuring destination information, hotel listings, restaurant listings, temple history, maps, authentication, admin dashboard and database integration.",
+      desc: "A comprehensive tourism guide and civic platform featuring destination profiles, hotel listings, temple history, interactive maps, authentication, admin dashboard and relational MySQL integration.",
       tech: ["HTML5", "CSS3", "JavaScript", "Node.js", "MySQL", "Express.js"],
-      demo: "#",
+      demo: "https://github.com/Tanmaybhar7/MyTarakeswar",
       github: "https://github.com/Tanmaybhar7/MyTarakeswar"
     },
     pharmacy: {
       title: "Pharmacy Stock & Expiry Tracker",
-      desc: "Comprehensive inventory management system for pharmacies with stock monitoring, automated expiry alerts, medicine management and reporting dashboard.",
-      tech: ["React", "Vite", "JavaScript", "PHP", "MySQL"],
-      demo: "#",
+      desc: "Comprehensive pharmaceutical inventory system with automated batch expiry monitoring, low-stock threshold alerts, real-time reporting, and CRUD inventory management.",
+      tech: ["React 19", "Vite", "JavaScript", "PHP", "MySQL"],
+      demo: "https://github.com/Tanmaybhar7",
       github: "https://github.com/Tanmaybhar7"
     },
     skillgap: {
       title: "Skill Mapping & Gap Analysis System",
-      desc: "Web platform that analyzes employee/student skills, compares them with required competencies and generates personalized skill gap reports.",
-      tech: ["React", "Vite", "JavaScript", "PHP", "MySQL"],
-      demo: "#",
+      desc: "Web platform that maps employee and student skill profiles against industry competencies, generating actionable skill gap visualization and training roadmaps.",
+      tech: ["React 19", "Vite", "JavaScript", "PHP", "MySQL"],
+      demo: "https://github.com/Tanmaybhar7",
       github: "https://github.com/Tanmaybhar7"
     },
     myskypulse: {
       title: "MySkyPulse Mobile Weather App",
-      desc: "Modern weather application with elegant mobile UI, real-time forecasts, weather insights, interactive animations, and REST API integration.",
+      desc: "Modern weather forecasting application with intuitive mobile UI, real-time live meteorological telemetry, interactive forecast graphs, and REST API integration.",
       tech: ["Android App", "Mobile UI", "JavaScript", "REST API"],
-      demo: "#",
+      demo: "https://github.com/Tanmaybhar7",
       github: "https://github.com/Tanmaybhar7"
     }
   };
@@ -666,21 +768,73 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
   }
 
   // --------------------------------------------------------------------------
-  // 15. REAL EMAIL SENDING HANDLER (FormSubmit AJAX + Fallback)
+  // 15. CONTACT FORM VALIDATION & REAL EMAIL SENDING (FormSubmit + Fallback)
   // --------------------------------------------------------------------------
   const contactForm = document.getElementById('contact-form');
   const contactBtn = document.getElementById('contact-submit-btn');
   const contactStatus = document.getElementById('contact-status-msg');
+  const nameInput = document.getElementById('contact-name');
+  const emailInput = document.getElementById('contact-email');
+  const messageInput = document.getElementById('contact-message');
+  const nameError = document.getElementById('name-error');
+  const emailError = document.getElementById('email-error');
+  const messageError = document.getElementById('message-error');
+
+  // Helper function to clear field errors
+  function clearErrors() {
+    [nameInput, emailInput, messageInput].forEach(inp => {
+      if (inp) inp.classList.remove('is-invalid');
+    });
+    [nameError, emailError, messageError].forEach(err => {
+      if (err) err.classList.remove('visible');
+    });
+  }
+
+  // Clear errors on real-time typing
+  if (nameInput) nameInput.addEventListener('input', () => { nameInput.classList.remove('is-invalid'); if (nameError) nameError.classList.remove('visible'); });
+  if (emailInput) emailInput.addEventListener('input', () => { emailInput.classList.remove('is-invalid'); if (emailError) emailError.classList.remove('visible'); });
+  if (messageInput) messageInput.addEventListener('input', () => { messageInput.classList.remove('is-invalid'); if (messageError) messageError.classList.remove('visible'); });
+
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
 
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      clearErrors();
       
-      const name = document.getElementById('contact-name').value.trim();
-      const email = document.getElementById('contact-email').value.trim();
-      const message = document.getElementById('contact-message').value.trim();
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const message = messageInput ? messageInput.value.trim() : '';
 
-      if (!name || !email || !message) return;
+      let hasError = false;
+
+      if (!name) {
+        if (nameInput) nameInput.classList.add('is-invalid');
+        if (nameError) nameError.classList.add('visible');
+        hasError = true;
+      }
+
+      if (!email || !validateEmail(email)) {
+        if (emailInput) emailInput.classList.add('is-invalid');
+        if (emailError) {
+          emailError.textContent = !email ? 'Please enter your email address.' : 'Please enter a valid email address.';
+          emailError.classList.add('visible');
+        }
+        hasError = true;
+      }
+
+      if (!message || message.length < 5) {
+        if (messageInput) messageInput.classList.add('is-invalid');
+        if (messageError) messageError.classList.add('visible');
+        hasError = true;
+      }
+
+      if (hasError) {
+        showToast('⚠️ Please fix the errors in the contact form.');
+        return;
+      }
 
       if (contactBtn) {
         contactBtn.disabled = true;
@@ -721,15 +875,16 @@ app.<span class="code-fn">listen</span>(PORT, () =&gt; console.<span class="code
           if (contactStatus) {
             contactStatus.style.color = '#10B981';
             contactStatus.innerHTML = `
-              <span style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; color: #10B981; font-weight: 700;">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10" fill="rgba(16, 185, 129, 0.15)"/>
                   <path d="M9 12l2 2 4-4"/>
                 </svg>
-                Message sent successfully! Tanmay will receive it in bhartanmay@gmail.com.
+                Thank you, ${name}! Your message was delivered to Tanmay.
               </span>
             `;
           }
+          showToast('Message sent successfully! 🚀');
           contactForm.reset();
         } else {
           throw new Error('FormSubmit API response failed');

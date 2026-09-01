@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Tanmay Bhar</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="404 - Page Not Found. The page you are looking for might have been removed, renamed, or is temporarily unavailable." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#090d16" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .error-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .error-code-badge {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--accent-yellow);
+      background: rgba(251, 193, 56, 0.1);
+      border: 1px solid rgba(251, 193, 56, 0.3);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .error-glitch-num {
+      font-family: var(--font-heading);
+      font-size: clamp(6rem, 18vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, var(--accent-yellow) 0%, #00f2fe 50%, var(--accent-purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      position: relative;
+      user-select: none;
+      filter: drop-shadow(0 10px 30px rgba(0, 242, 254, 0.25));
+    }
+
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+    }
+
+    .error-description {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .error-action-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .error-shortcuts-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 2rem;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .error-shortcuts-title {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .error-chips-row {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .error-chip-link {
+      padding: 0.5rem 1rem;
+      background: var(--bg-main);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .error-chip-link:hover {
+      background: var(--accent-yellow);
+      color: #0f172a;
+      border-color: var(--accent-yellow);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND CANVAS PARTICLES -->
+  <canvas id="particles-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.35;"></canvas>
+
+  <!-- 404 ERROR CONTENT -->
+  <main class="error-page-wrapper">
+    <div class="error-code-badge">
+      <span class="status-dot-green" style="background:#ef4444; box-shadow: 0 0 8px #ef4444;"></span>
+      HTTP 404 &bull; URL_NOT_FOUND
+    </div>
+
+    <div class="error-glitch-num">404</div>
+
+    <h1 class="error-title">Oops! You've Explored Off-Grid</h1>
+    
+    <p class="error-description">
+      The route or resource you are seeking has vanished, moved to a new endpoint, or never existed in this dimension. Let's get you back on track!
+    </p>
+
+    <div class="error-action-buttons">
+      <a href="index.html" class="pill-action-btn" style="background: var(--accent-yellow); color: #0f172a;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Back to Homepage</span>
+      </a>
+
+      <a href="index.html#projects" class="pill-action-btn hero-cv-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        <span>Explore Projects</span>
+      </a>
+
+      <a href="index.html#contact" class="pill-action-btn hero-cv-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Contact Tanmay</span>
+      </a>
+    </div>
+
+    <!-- Quick Navigation Shortcuts -->
+    <div class="error-shortcuts-box">
+      <div class="error-shortcuts-title">Quick Portals</div>
+      <div class="error-chips-row">
+        <a href="index.html#home" class="error-chip-link">🏠 Home</a>
+        <a href="index.html#projects" class="error-chip-link">💻 Featured Projects</a>
+        <a href="index.html#skills" class="error-chip-link">⚡ Tech Stack</a>
+        <a href="index.html#experience" class="error-chip-link">🚀 Journey</a>
+        <a href="index.html#certificates" class="error-chip-link">📜 Credentials</a>
+        <a href="mailto:bhartanmay@gmail.com" class="error-chip-link">✉️ bhartanmay@gmail.com</a>
+        <a href="tel:+917501228282" class="error-chip-link">📞 +91 75012 28282</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/particles.js"></script>
+</body>
+</html>

@@ -93,8 +93,8 @@ function triggerConfetti() {
   canvas.style.position = 'fixed';
   canvas.style.top = '0';
   canvas.style.left = '0';
-  canvas.style.width = '100vw';
-  canvas.style.height = '100vh';
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
   canvas.style.pointerEvents = 'none';
   canvas.style.zIndex = '999999';
   document.body.appendChild(canvas);

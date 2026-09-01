@@ -2,18 +2,30 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tanmay Bhar - Full-Stack Web & Mobile Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Tanmay Bhar — Full-Stack Web & Mobile App Developer | Portfolio</title>
   
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Portfolio of Tanmay Bhar, Full Stack Web Developer and Mobile App Developer specializing in React, Node.js, PHP, MySQL, and JavaScript." />
-  <meta name="keywords" content="Tanmay Bhar, Full Stack Developer, React Developer, Node.js Developer, Mobile App Developer, MyTarakeswar, Pharmacy Tracker, Portfolio" />
+  <!-- SEO & Primary Meta Tags -->
+  <meta name="description" content="Portfolio of Tanmay Bhar, Full-Stack Web Developer and Mobile App Engineer specializing in React, Node.js, PHP, MySQL, REST APIs, and high-performance applications." />
+  <meta name="keywords" content="Tanmay Bhar, Full Stack Developer, React Developer, Node.js Developer, Mobile App Developer, MyTarakeswar, Pharmacy Tracker, Web Developer India, Brainware University" />
   <meta name="author" content="Tanmay Bhar" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#090d16" />
   
-  <!-- OpenGraph / Social -->
+  <!-- OpenGraph / Social Facebook & LinkedIn -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tanmay Bhar | Full Stack & Mobile App Developer" />
-  <meta property="og:description" content="Full-stack web developer and mobile app engineer creating high performance applications." />
+  <meta property="og:title" content="Tanmay Bhar — Full-Stack Web & Mobile App Developer" />
+  <meta property="og:description" content="Portfolio of Tanmay Bhar, engineering scalable web apps, mobile solutions, and high-performance systems with React, Node.js, and MySQL." />
+  <meta property="og:site_name" content="Tanmay Bhar Portfolio" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tanmay Bhar — Full-Stack Web & Mobile App Developer" />
+  <meta name="twitter:description" content="Full-stack web developer and mobile app engineer creating high performance applications." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +40,7 @@
 <body>
 
   <!-- BACKGROUND CANVAS PARTICLES -->
-  <canvas id="particles-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 0; opacity: 0.4;"></canvas>
+  <canvas id="particles-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.4;"></canvas>
 
   <!-- NAVIGATION HEADER -->
   <nav class="nav-header">
@@ -119,8 +131,75 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </button>
+
+      <!-- Mobile Hamburger Menu Toggle Button -->
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
     </div>
   </nav>
+
+  <!-- MOBILE NAVIGATION DRAWER & BACKDROP -->
+  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-links">
+      <a href="#home" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="#projects" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        <span>Projects</span>
+      </a>
+      <a href="#skills" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <span>Skills & Tech</span>
+      </a>
+      <a href="#workflow" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Workflow</span>
+      </a>
+      <a href="#principles" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Principles</span>
+      </a>
+      <a href="#experience" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+        <span>Experience</span>
+      </a>
+      <a href="#certificates" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M6 18H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+        <span>Certificates</span>
+      </a>
+      <a href="#contact" class="mobile-drawer-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>
+        <span>Contact</span>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-actions">
+      <div class="mobile-drawer-contact-pills">
+        <a href="mailto:bhartanmay@gmail.com" class="mobile-quick-link-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>bhartanmay@gmail.com</span>
+        </a>
+        <a href="tel:+917501228282" class="mobile-quick-link-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 75012 28282</span>
+        </a>
+        <a href="https://wa.me/917501228282" target="_blank" rel="noopener noreferrer" class="mobile-quick-link-pill" style="color: #22c55e;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+      <button id="download-cv-drawer-btn" class="pill-action-btn" style="width: 100%; justify-content: center;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download CV</span>
+      </button>
+    </div>
+  </aside>
 
   <!-- HERO SECTION WITH CHARACTER HOVER & SVG SINE MARQUEE -->
   <section id="spark-effect-zone" class="hero-zone">
@@ -352,7 +431,7 @@
             </div>
             <div class="neo-project-info">
               <h3 class="neo-project-title">MyTarakeswar</h3>
-              <p class="neo-project-sub">mytarakeswar.in</p>
+              <p class="neo-project-sub">mytarakeswar.in (Full-Stack Platform)</p>
             </div>
           </div>
           <div class="neo-card-shadow-1"></div>
@@ -370,7 +449,7 @@
             </div>
             <div class="neo-project-info">
               <h3 class="neo-project-title">Pharmacy Stock & Expiry Tracker</h3>
-              <p class="neo-project-sub">pharmacytracker.dev</p>
+              <p class="neo-project-sub">Full-Stack Inventory & Expiry Engine</p>
             </div>
           </div>
           <div class="neo-card-shadow-1"></div>
@@ -387,7 +466,7 @@
             </div>
             <div class="neo-project-info">
               <h3 class="neo-project-title">Skill Mapping & Gap System</h3>
-              <p class="neo-project-sub">skillgap.dev</p>
+              <p class="neo-project-sub">Competency Mapping & Analytics</p>
             </div>
           </div>
           <div class="neo-card-shadow-1"></div>
@@ -405,7 +484,7 @@
             </div>
             <div class="neo-project-info">
               <h3 class="neo-project-title">MySkyPulse Mobile App</h3>
-              <p class="neo-project-sub">myskypulse.app</p>
+              <p class="neo-project-sub">Live Forecast & Weather Insights</p>
             </div>
           </div>
           <div class="neo-card-shadow-1"></div>
@@ -413,8 +492,18 @@
         </div>
       </div>
 
+      <!-- Project Search Empty State Container -->
+      <div id="no-projects-found" class="empty-state-box">
+        <div class="empty-state-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        </div>
+        <h3 class="empty-state-title">No Matching Projects</h3>
+        <p class="empty-state-desc">We couldn't find any projects matching your search term or category filter. Try a different keyword or reset filters.</p>
+        <button id="reset-project-filters-btn" class="empty-state-btn">Reset All Filters</button>
+      </div>
+
       <div class="load-more-btn-wrapper">
-        <a href="https://github.com/Tanmaybhar7" target="_blank" class="pill-action-btn">
+        <a href="https://github.com/Tanmaybhar7" target="_blank" rel="noopener noreferrer" class="pill-action-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg>
           View All Projects on GitHub
         </a>
@@ -746,36 +835,76 @@
       </div>
 
       <div class="timeline-flow">
+        <!-- 1. Brainware University -->
         <div class="timeline-node reveal-on-scroll" data-node-type="education">
           <div class="node-dot"></div>
-          <div class="node-date">2022 - Present</div>
+          <div class="node-date">2023 - Present</div>
           <h3 class="node-title">Bachelor of Computer Applications (BCA)</h3>
-          <div class="node-sub">Brainware University • Computational Science</div>
-          <p class="node-body">Specializing in Software Engineering, Web Technologies, Database Architecture, and Computer Science fundamentals.</p>
+          <div class="node-sub">Brainware University • Computational Sciences</div>
+          <p class="node-body">Specializing in Software Engineering, Web Technologies, Relational Database Architecture, and Computer Science fundamentals.</p>
         </div>
 
+        <!-- 2. Mobile Development -->
         <div class="timeline-node reveal-on-scroll delay-1" data-node-type="dev">
           <div class="node-dot"></div>
-          <div class="node-date">2023</div>
-          <h3 class="node-title">React & Modern Frontend Mastery</h3>
-          <div class="node-sub">Web Application Development</div>
-          <p class="node-body">Engineered component-driven UIs with React 19, Vite, state management, and modern CSS3 design systems.</p>
+          <div class="node-date">2026</div>
+          <h3 class="node-title">Mobile App Development</h3>
+          <div class="node-sub">Native & Cross-Platform Mobile Applications</div>
+          <p class="node-body">Created high-performance mobile applications with real-time REST API integration, weather telemetry, touch-driven UI, and offline-first capabilities.</p>
         </div>
 
+        <!-- 3. Full Stack & MERN Stack -->
         <div class="timeline-node reveal-on-scroll delay-2" data-node-type="dev">
           <div class="node-dot"></div>
-          <div class="node-date">2024</div>
-          <h3 class="node-title">Full Stack Backend & Relational Databases</h3>
-          <div class="node-sub">Node.js, Express & MySQL</div>
-          <p class="node-body">Architected RESTful API endpoints, authentication flows, and relational SQL database structures for platforms like MyTarakeswar and Pharmacy Tracker.</p>
+          <div class="node-date">2024 - 2025</div>
+          <h3 class="node-title">Full Stack & MERN Stack</h3>
+          <div class="node-sub">React, Node.js, Express & Database Systems</div>
+          <p class="node-body">Architected full-stack web platforms, RESTful APIs, relational MySQL and database structures, and secure authentication flows.</p>
         </div>
 
+        <!-- 4. C, Python & Frontend Web -->
         <div class="timeline-node reveal-on-scroll delay-3" data-node-type="dev">
           <div class="node-dot"></div>
-          <div class="node-date">2024 - 2026</div>
-          <h3 class="node-title">Mobile App Development & Ecosystem</h3>
-          <div class="node-sub">MySkyPulse Mobile App</div>
-          <p class="node-body">Created mobile applications with real-time REST API weather integrations, smooth touch interactions, and offline caching.</p>
+          <div class="node-date">2023 - 2024</div>
+          <h3 class="node-title">C, Python & Frontend Web</h3>
+          <div class="node-sub">Foundations of Programming & Modern Web Design</div>
+          <p class="node-body">Mastered core computer science principles in C and Python, algorithmic problem solving, modern HTML5, CSS3, and interactive JavaScript.</p>
+        </div>
+
+        <!-- 5. Higher Secondary -->
+        <div class="timeline-node reveal-on-scroll" data-node-type="education">
+          <div class="node-dot"></div>
+          <div class="node-date">2021 - 2023</div>
+          <h3 class="node-title">Higher Secondary (Class 11 - 12)</h3>
+          <div class="node-sub">Dwarhatta Rajeswari Institution</div>
+          <p class="node-body">ARTS Stream — Geography, Sanskrit, Philosophy, and Computer Applications.</p>
+        </div>
+
+        <!-- 6. Secondary -->
+        <div class="timeline-node reveal-on-scroll delay-1" data-node-type="education">
+          <div class="node-dot"></div>
+          <div class="node-date">2016 - 2020</div>
+          <h3 class="node-title">Secondary Schooling (Class 6 - 10)</h3>
+          <div class="node-sub">Dwarhatta Rajeswari Institution</div>
+          <p class="node-body">Completed secondary education with core curriculum in science, mathematics, languages, and social studies.</p>
+        </div>
+
+        <!-- 7. Primary -->
+        <div class="timeline-node reveal-on-scroll delay-2" data-node-type="education">
+          <div class="node-dot"></div>
+          <div class="node-date">2013 - 2015</div>
+          <h3 class="node-title">Primary Schooling (Class 3 - 5)</h3>
+          <div class="node-sub">Dwarhatta Rajeswari Junior Basic School</div>
+          <p class="node-body">Elementary primary education establishing foundational arithmetic, literacy, and logical thinking.</p>
+        </div>
+
+        <!-- 8. Early Education -->
+        <div class="timeline-node reveal-on-scroll delay-3" data-node-type="education">
+          <div class="node-dot"></div>
+          <div class="node-date">2009 - 2012</div>
+          <h3 class="node-title">Early Childhood Education (LKG to Class 2)</h3>
+          <div class="node-sub">Ramkrishna Vivekananda Mission</div>
+          <p class="node-body">Formative early schooling focused on discipline, moral values, and foundational learning.</p>
         </div>
       </div>
     </div>
@@ -806,7 +935,7 @@
         <!-- Cert 1: AWS ML & AI -->
         <div class="cert-card reveal-on-scroll">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert1.png" class="cert-img" alt="AWS ML & AI Certificate" />
+            <img src="certificates/cert1.png" class="cert-img" alt="AWS ML & AI Certificate" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">AWS VERIFIED</div>
           </div>
           <div class="cert-body">
@@ -823,7 +952,7 @@
         <!-- Cert 2: Prodigy InfoTech -->
         <div class="cert-card reveal-on-scroll delay-1">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert2.png" class="cert-img" alt="Prodigy InfoTech Web Development Internship" />
+            <img src="certificates/cert2.png" class="cert-img" alt="Prodigy InfoTech Web Development Internship" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">INTERNSHIP</div>
           </div>
           <div class="cert-body">
@@ -840,7 +969,7 @@
         <!-- Cert 3: Reliance Foundation -->
         <div class="cert-card reveal-on-scroll delay-2">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert3.png" class="cert-img" alt="Reliance Foundation Python Programming" />
+            <img src="certificates/cert3.png" class="cert-img" alt="Reliance Foundation Python Programming" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">RELIANCE ACADEMY</div>
           </div>
           <div class="cert-body">
@@ -857,7 +986,7 @@
         <!-- Cert 4: CodSoft -->
         <div class="cert-card reveal-on-scroll delay-3">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert4.png" class="cert-img" alt="CodSoft Virtual Internship" />
+            <img src="certificates/cert4.png" class="cert-img" alt="CodSoft Virtual Internship" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">INTERNSHIP</div>
           </div>
           <div class="cert-body">
@@ -874,7 +1003,7 @@
         <!-- Cert 5: Brainware University ICSCI -->
         <div class="cert-card reveal-on-scroll">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert5.png" class="cert-img" alt="ICSCI Conference Certificate" />
+            <img src="certificates/cert5.png" class="cert-img" alt="ICSCI Conference Certificate" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">CONFERENCE</div>
           </div>
           <div class="cert-body">
@@ -891,7 +1020,7 @@
         <!-- Cert 6: Accenture Software Engineering Simulation -->
         <div class="cert-card reveal-on-scroll delay-1">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert7.png" class="cert-img" alt="Accenture Software Engineering Job Simulation" />
+            <img src="certificates/cert7.png" class="cert-img" alt="Accenture Software Engineering Job Simulation" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">ACCENTURE</div>
           </div>
           <div class="cert-body">
@@ -908,7 +1037,7 @@
         <!-- Cert 7: AWS Events and Workflows -->
         <div class="cert-card reveal-on-scroll delay-2">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert8.png" class="cert-img" alt="AWS Events and Workflows Certificate" />
+            <img src="certificates/cert8.png" class="cert-img" alt="AWS Events and Workflows Certificate" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">AWS VERIFIED</div>
           </div>
           <div class="cert-body">
@@ -925,7 +1054,7 @@
         <!-- Cert 8: AWS Solutions Architecture Simulation -->
         <div class="cert-card reveal-on-scroll delay-3">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert9.png" class="cert-img" alt="AWS Solutions Architecture Simulation" />
+            <img src="certificates/cert9.png" class="cert-img" alt="AWS Solutions Architecture Simulation" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">AWS / FORAGE</div>
           </div>
           <div class="cert-body">
@@ -942,7 +1071,7 @@
         <!-- Cert 9: TCS iON Career Edge -->
         <div class="cert-card reveal-on-scroll delay-4">
           <div class="cert-img-wrapper">
-            <img src="certificates/cert10.png" class="cert-img" alt="TCS iON Career Edge Certificate" />
+            <img src="certificates/cert10.png" class="cert-img" alt="TCS iON Career Edge Certificate" loading="lazy" decoding="async" />
             <div class="cert-badge-ribbon">TCS iON</div>
           </div>
           <div class="cert-body">
@@ -1002,6 +1131,39 @@
         </div>
       </div>
 
+      <!-- Direct Contact Badges (Email, Phone, WhatsApp) -->
+      <div class="direct-contact-grid reveal-on-scroll">
+        <a href="mailto:bhartanmay@gmail.com" class="direct-contact-card" title="Send email to Tanmay Bhar">
+          <div class="contact-card-icon icon-email-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Direct Email</div>
+            <div class="contact-card-val">bhartanmay@gmail.com</div>
+          </div>
+        </a>
+
+        <a href="tel:+917501228282" class="direct-contact-card" title="Call Tanmay Bhar">
+          <div class="contact-card-icon icon-phone-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">Direct Phone</div>
+            <div class="contact-card-val">+91 75012 28282</div>
+          </div>
+        </a>
+
+        <a href="https://wa.me/917501228282" target="_blank" rel="noopener noreferrer" class="direct-contact-card" title="Chat with Tanmay on WhatsApp">
+          <div class="contact-card-icon icon-wa-bg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-card-label">WhatsApp Quick Chat</div>
+            <div class="contact-card-val">+91 75012 28282</div>
+          </div>
+        </a>
+      </div>
+
       <!-- Real FormSubmit / Mailto Contact Form -->
       <div class="contact-card-box reveal-on-scroll">
         <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
@@ -1017,18 +1179,21 @@
           </svg>
         </h2>
         
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
           <div class="form-group">
             <label class="form-label" for="contact-name">Your Name</label>
             <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+            <div class="form-field-error" id="name-error">Please enter your name.</div>
           </div>
           <div class="form-group">
             <label class="form-label" for="contact-email">Your Email</label>
             <input type="email" id="contact-email" name="email" class="form-input" placeholder="alex@example.com" required />
+            <div class="form-field-error" id="email-error">Please enter a valid email address.</div>
           </div>
           <div class="form-group">
             <label class="form-label" for="contact-message">Your Message</label>
-            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project..." required></textarea>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project or inquiry..." required></textarea>
+            <div class="form-field-error" id="message-error">Please enter a message (at least 6 characters).</div>
           </div>
 
           <!-- Professional Rocket Vector SVG Button -->
@@ -1043,11 +1208,14 @@
           <div id="contact-status-msg" style="margin-top: 1rem; text-align: center; font-weight: 600; display: none; font-size: 0.95rem;"></div>
         </form>
 
-        <div style="margin-top: 1.5rem; text-align: center; padding-top: 1rem; border-top: 1px dashed var(--border-color);">
-          <span style="font-size: 0.85rem; color: var(--text-muted);">Prefer direct email? </span>
+        <div style="margin-top: 1.5rem; text-align: center; padding-top: 1rem; border-top: 1px dashed var(--border-color); display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
           <a href="mailto:bhartanmay@gmail.com" style="font-size: 0.85rem; color: var(--accent-yellow); font-weight: 700; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.3rem;">
-            Send directly to bhartanmay@gmail.com 
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            bhartanmay@gmail.com 
+          </a>
+          <a href="tel:+917501228282" style="font-size: 0.85rem; color: #10B981; font-weight: 700; text-decoration: underline; display: inline-flex; align-items: center; gap: 0.3rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 75012 28282
           </a>
         </div>
       </div>
@@ -1098,7 +1266,7 @@
       <p id="modal-project-desc" style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Project Description</p>
       <div id="modal-project-tech" style="margin-bottom: 2rem;"></div>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a id="modal-github-btn" href="#" target="_blank" class="pill-action-btn" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">View GitHub Repo</a>
+        <a id="modal-github-btn" href="https://github.com/Tanmaybhar7" target="_blank" rel="noopener noreferrer" class="pill-action-btn" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">View GitHub Repo</a>
       </div>
     </div>
   </div>
@@ -1155,6 +1323,9 @@
             </a>
             <a href="mailto:bhartanmay@gmail.com" class="footer-social-link" aria-label="Email">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="tel:+917501228282" class="footer-social-link" aria-label="Phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </a>
           </div>
         </div>

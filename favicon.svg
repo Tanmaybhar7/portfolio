@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBC138"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="favCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="favGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Rounded Base Plate -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#favBg)" stroke="url(#favGold)" stroke-width="2.5"/>
+  
+  <!-- Corner Accent Dots -->
+  <circle cx="10" cy="10" r="1.5" fill="#FBC138" opacity="0.6"/>
+  <circle cx="54" cy="10" r="1.5" fill="#00f2fe" opacity="0.6"/>
+  
+  <!-- Stylized "TB" Monogram -->
+  <!-- Letter T -->
+  <path d="M14 20 H34 M24 20 V46" stroke="url(#favGold)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Letter B -->
+  <path d="M34 20 H44 C48 20 50 22.5 50 26 C50 29.5 48 32 44 32 H34 H45 C49.5 32 52 35 52 39 C52 43.5 49 46 44 46 H34 V20" stroke="url(#favCyan)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Lightning Bolt Micro Accent -->
+  <polygon points="31,27 27,34 32,34 29,41 37,32 32,32" fill="#FBC138" filter="url(#favGlow)"/>
+</svg>

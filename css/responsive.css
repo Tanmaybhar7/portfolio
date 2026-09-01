@@ -38,7 +38,11 @@
    -------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .nav-header {
-    padding: 0.85rem 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
   }
 
   .hello-text {
@@ -46,20 +50,15 @@
   }
 
   .nav-actions-right {
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .social-links-group {
-    gap: 0.4rem;
-  }
-
-  .social-icon-btn {
-    width: 2.2rem;
-    height: 2.2rem;
+    display: none; /* Accessible in mobile drawer menu */
   }
 
   .radio-player-btn {
-    padding: 0.4rem 0.75rem;
+    padding: 0.4rem 0.65rem;
   }
 
   .hero-zone {
